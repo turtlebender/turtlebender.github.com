@@ -5,13 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Bending Turtles</title>
+  <title>Fun with lambdas - Bending Turtles</title>
   <meta name="author" content="Tom Howe">
 
   
-  <meta name="description" content="I&#8217;ve been fighting all week with configuring uwsgi to work with both
-python (wsgi) and ruby (rack) apps. The python was no problem.
-Honestly, &hellip;">
+  <meta name="description" content="Ok, so this is a kinda small thing, but it is a nice little pattern that
+I used a lot today while building an oauth 2.0 server for
+https://www. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +20,7 @@ Honestly, &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://turtlebender.github.com">
+  <link rel="canonical" href="http://turtlebender.github.com/blog/2012/04/26/fun-with-lambdas">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -62,57 +62,12 @@ Honestly, &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/05/28/ruby-and-python-and-uwsgi/">Ruby and Python and Uwsgi</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-28T00:00:00-05:00" pubdate data-updated="true">May 28<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&#8217;ve been fighting all week with configuring uwsgi to work with both
-python (wsgi) and ruby (rack) apps.  The python was no problem.
-Honestly, the rack stuff wasn&#8217;t too bad once you sort out the
-dependencies.  The real problem I faced was that I manage my rack apps
-using bundler, and it is certainly not obvious how to make that work.  I
-had actually given up, but then found disturbingly suddent success when
-I was waiting for something else to complete.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/04/26/fun-with-lambdas/">Fun With Lambdas</a></h1>
+      <h1 class="entry-title">Fun With Lambdas</h1>
     
     
       <p class="meta">
@@ -135,7 +90,7 @@ I was waiting for something else to complete.</p>
   </header>
 
 
-  <div class="entry-content"><p>Ok, so this is a kinda small thing, but it is a nice little pattern that
+<div class="entry-content"><p>Ok, so this is a kinda small thing, but it is a nice little pattern that
 I used a lot today while building an oauth 2.0 server for
 https://www.globusonline.org  I often need to make sure that a
 particular exception was thrown, as part of my &#8220;unhappy&#8221; testing.  This
@@ -157,22 +112,16 @@ is always a little bit of a pain.</p>
 <p>Sticking that lambda in there makes it really easy to check for an
 exception.  Groundbreaking?  No.  But very convenient.</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/04/26/blogging-with-octopress/">Blogging With Octopress</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Tom Howe</span></span>
+
+      
 
 
 
@@ -184,34 +133,34 @@ exception.  Groundbreaking?  No.  But very convenient.</p>
   
 
 
-<time datetime="2012-04-26T09:55:00-05:00" pubdate data-updated="true">Apr 26<span>th</span>, 2012</time>
-        
-      </p>
+<time datetime="2012-04-26T18:08:00-05:00" pubdate data-updated="true">Apr 26<span>th</span>, 2012</time>
+      
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>This is not hugely inspiring, but my goal is to start blogging with far
-more frequency.  Since my life is largely steeped in github these days,
-I figured github and octopress would be an appropriate way to approach it.
-I&#8217;m not much of a designer, so I&#8217;m going to rely on other people&#8217;s
-templates for the most part.  I am really enjoying building my blog
-posts in vim, though and the automatic version control is excellent.</p>
-
-<p>That&#8217;s all, until I figure out some more stuff.</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://turtlebender.github.com/blog/2012/04/26/fun-with-lambdas/" data-via="turtlebender" data-counturl="http://turtlebender.github.com/blog/2012/04/26/fun-with-lambdas/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/04/26/blogging-with-octopress/" title="Previous Post: Blogging with Octopress">&laquo; Blogging with Octopress</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/05/28/ruby-and-python-and-uwsgi/" title="Next Post: Ruby And Python And Uwsgi">Ruby And Python And Uwsgi &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -236,7 +185,7 @@ posts in vim, though and the automatic version control is excellent.</p>
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/turtlebender">@turtlebender</a> on GitHub
@@ -266,7 +215,7 @@ posts in vim, though and the automatic version control is excellent.</p>
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -294,6 +243,7 @@ posts in vim, though and the automatic version control is excellent.</p>
 
   
 </aside>
+
 
     </div>
   </div>

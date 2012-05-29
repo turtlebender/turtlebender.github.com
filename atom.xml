@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Bending Turtles]]></title>
+  <link href="http://turtlebender.github.com/atom.xml" rel="self"/>
+  <link href="http://turtlebender.github.com/"/>
+  <updated>2012-05-28T22:11:26-05:00</updated>
+  <id>http://turtlebender.github.com/</id>
+  <author>
+    <name><![CDATA[Tom Howe]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby And Python And Uwsgi]]></title>
+    <link href="http://turtlebender.github.com/blog/2012/05/28/ruby-and-python-and-uwsgi/"/>
+    <updated>2012-05-28T00:00:00-05:00</updated>
+    <id>http://turtlebender.github.com/blog/2012/05/28/ruby-and-python-and-uwsgi</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve been fighting all week with configuring uwsgi to work with both
+python (wsgi) and ruby (rack) apps.  The python was no problem.
+Honestly, the rack stuff wasn&#8217;t too bad once you sort out the
+dependencies.  The real problem I faced was that I manage my rack apps
+using bundler, and it is certainly not obvious how to make that work.  I
+had actually given up, but then found disturbingly suddent success when
+I was waiting for something else to complete.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Fun with lambdas]]></title>
+    <link href="http://turtlebender.github.com/blog/2012/04/26/fun-with-lambdas/"/>
+    <updated>2012-04-26T18:08:00-05:00</updated>
+    <id>http://turtlebender.github.com/blog/2012/04/26/fun-with-lambdas</id>
+    <content type="html"><![CDATA[<p>Ok, so this is a kinda small thing, but it is a nice little pattern that
+I used a lot today while building an oauth 2.0 server for
+https://www.globusonline.org  I often need to make sure that a
+particular exception was thrown, as part of my &#8220;unhappy&#8221; testing.  This
+is always a little bit of a pain.</p>
+
+<figure class='code'><figcaption><span>test.py </span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">test_me</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span class='line'>  <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="n">NodeNotFoundException</span><span class="p">,</span>
+</span><span class='line'>     <span class="k">lambda</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">get_node</span><span class="p">(</span><span class="s">&#39;access_token&#39;</span><span class="p">,</span>
+</span><span class='line'>     <span class="n">access_token_data</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>Sticking that lambda in there makes it really easy to check for an
+exception.  Groundbreaking?  No.  But very convenient.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Blogging with Octopress]]></title>
+    <link href="http://turtlebender.github.com/blog/2012/04/26/blogging-with-octopress/"/>
+    <updated>2012-04-26T09:55:00-05:00</updated>
+    <id>http://turtlebender.github.com/blog/2012/04/26/blogging-with-octopress</id>
+    <content type="html"><![CDATA[<p>This is not hugely inspiring, but my goal is to start blogging with far
+more frequency.  Since my life is largely steeped in github these days,
+I figured github and octopress would be an appropriate way to approach it.
+I&#8217;m not much of a designer, so I&#8217;m going to rely on other people&#8217;s
+templates for the most part.  I am really enjoying building my blog
+posts in vim, though and the automatic version control is excellent.</p>
+
+<p>That&#8217;s all, until I figure out some more stuff.</p>
+]]></content>
+  </entry>
+  
+</feed>
